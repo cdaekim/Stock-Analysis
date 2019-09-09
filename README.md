@@ -21,11 +21,8 @@ mR = (C1 + D / C0) - 1
 
 
 Where mR is the monthly rate of return;
-
 C1 is the current month's closing price;
-
 C0 is the last month's closing price; and,
-
 D is the dividend price.
 
 For the calculation of the return on treasury bills as the risk free rate of return, I used the 4 Week Discount Rate.The equation of the return on the treasury bills is as followed:
