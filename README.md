@@ -21,11 +21,14 @@ mR = (C1 + D / C0) - 1
 
 
 Where mR is the monthly rate of return;
+
 C1 is the current month's closing price;
+
 C0 is the last month's closing price; and,
+
 D is the dividend price.
 
-For the calculation of the return on treasury bills as the risk free rate of return, I used the 4 Week Discount Rate.The equation of the return on the treasury bills is as followed:
+For the calculation of the return on treasury bills as the risk free rate of return, I used the 4 Week Discount Rate. The equation of the return on the treasury bills is as followed:
 
 
 RoR = I/P/100
@@ -35,7 +38,7 @@ Where RoR is the return on the treasury bills,
 
 Where P is the Price of the treasury bills, and defined by the equation P = 1 - dR * 28/360 where dR is the 4 Week Discount Rate, and;
 
-I is the interest of the treasury bills, and defined by the equation I = 1 - P
+I is the interest of the treasury bills, and defined by the equation I = 1 - P.
 
 __Frequency Distribution of Returns:__
 
@@ -70,3 +73,11 @@ S1 and S2 were the stocks' respective average returns; and,
 COV() is the covariance between the stocks.
 
 The portfolio return was calculated with linear algebra using the TRANSPOSE() and MMULT() functions. The weights matrix (11 x 2) was multipled against the transposed stock returns matrix ((1x2) -> (2x1)) to create the portfolio return matrix (11 x 1).
+
+__Portfolio Performance Analysis__
+
+In the worksheet titled "Portfolio Performance Analysis," I created an active portfolio by adjusting the weights of each stock and named it Acme. While the original Market Return was the average of the returns in an equally distributed portfolio, the Acme fund was the average of unequally distributed portfolio. I adjusted the equal weights from 25% to 20% ATVI, 40% NTES, 20% EA, and 20% TTWO. There was no rationale behind the weight allocation as this was an exercise into portfolio performance analysis.
+
+I calculated the raw, excess, geometric, and cumulative returns of the Acme fund. I also calculated the total and average of the arithmetic and geometric returns, the monthly and yearly risk measures (std. dev.), regression based portfolio measures (alpha and beta using the INTERCEPT() and SLOPE() functions respectively), average risk free rate of return, and the Sharpe, Treynor, and Jenson Ratios. The three portfolio measure ratios revealed that the Acme fund's performance was not significally distinct from the benchmark. 
+
+
